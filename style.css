@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header .head .logo{
+    background-color:#fafafa;
+    width: 35%;
+    height: 100px;
+    float: right;
+}
+header .head .logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    float: right;
+}
+header .head .logo h2{
+    margin-left: 20px;
+    line-height: 100px;
+}
+header .head nav{
+    background-color: red;
+    width: 65%;
+    height: 100px;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0px 50px;
+    font-size: 25px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: red;
+
+}
+@media (max-width:1016px) {
+    header .head nav{
+        width: 75%;
+    }
+    header .head .logo{
+        width: 25%;
+    }
+}
+@media (max-width:948px) {
+    header .head nav{
+        width: 100%
+    }
+    header .head .logo{
+        width: 100%
+    }
+}
+@media (max-width:800px) {
+    header .head nav{
+        width: 100%;
+    }
+    header .head .logo{
+        width: 50%;
+        height: 150px;
+        margin: auto;
+        background-color: white;
+    }
+    header .head .logo img,h2{
+        float: none;
+        margin-left: -10px;
+        padding: 0;
+    }
+    header .head .logo h2{
+        margin: -15px;
+    }
+}
+@media (max-width:670px){
+    header .head .logo img{
+        margin-left: -50px;
+    }
+    header .head .logo h2{
+        margin-left: -60px;
+    }
+    header .head nav ul li a{
+        padding: 0px 20px ;
+        font-size: 20px;
+    }
+}
+
+/*----------------------------*/
+main aside{
+    width: 35%;
+    height: 500px;
+    float: left;
+    text-align: center;
+}
+main aside img{
+    width: 90%;
+    padding-top: 5px;
+}
+main aside h3{
+    padding: 20px 0px;
+    word-spacing: 5px;
+    border-bottom: 2px solid red;
+}
+main aside .icone img{
+    width: 45px;
+    height: 45px;
+    padding: 15px 0px;
+    border-bottom: 2px double red;
+}
+main aside .icone img:hover{
+    width: 50px;
+    height: 50px;
+}
+main .div {
+    background-color:white;
+    width: 65%;
+    height: 500px;
+    float: right;
+    position: relative;
+    animation-name: bg-color;
+    animation-duration: 5s;
+    animation-timing-function: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bg-color{
+    0%{
+        background-color:white;
+    }
+    25%{
+        background-color:rgb(253, 188, 66);
+    }
+    50%{
+        background-color:rgb(232, 240, 130);
+    }
+    75%{
+        background-color:rgb(238, 165, 106);
+    }
+    100%{
+        background-color:rgb(228, 235, 139);
+    }
+
+}
+main div .content{
+    background-color: #fafafa;
+    padding: 20px;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+main div .content article,img{
+    display: inline-block;
+}
+main div .content h2{
+    padding: 20px 0px;
+    border-bottom: 2px solid red;
+}
+main div .content img{
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+    margin-right: 110px;
+   
+}
+.content{
+    position: relative;
+}
+main div .content article {
+    position: absolute;
+    top:53%;
+    left:50%;
+}
+main div .content .p1{
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+main div .content .p2{
+    border: 1px solid rgb(90, 87, 87);
+    padding: 10px 0px ;
+    padding-right: 10px;
+    border-radius: 3px;
+    
+    
+}
+main div .content .p2 .span1{
+    background-color: red;
+    padding: 10px 30px 11px;
+    font-family: sans-serif;
+}
+main div .content .p2 .span1:hover{
+    background-color: white;
+}
+main div .content .p2 .span1 a{
+    color: white;
+    text-decoration: none;
+}
+main div .content .p2 .span1 a:hover{
+    color: red;
+}
+@media (max-width:800px){
+    main .div{
+        width: 100%;
+    }
+    main aside{
+        width: 100%;
+    }
+
+}
+
+/*--------------------------------*/
+footer div{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+footer div img{
+    width: 100%;
+    margin: 10px 0px;
+
+}
